@@ -82,8 +82,8 @@ socialdf.insert(1, 'comparison_type', 'peers')
 frames = [goaldf, socialdf]
 result = pd.concat(frames)
 result1=result.reset_index(drop=True)
-performance_data_df.to_csv("comparison.csv")
-mod_df=mod_collector(performance_data_df, result1)
+#performance_data_df.to_csv("comparison.csv")
+mod_df=mod_collector(performance_data_df, goaldf)
 # mod_df.to_csv("mod_df.csv")
 
 

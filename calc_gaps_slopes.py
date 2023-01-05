@@ -21,7 +21,7 @@ def mod_collector(performance_data,comparison_values):
     monotonic_pred_df = monotonic_pred(performance_data,comparison_values)
     mod_df=gap_size.merge(trend_slope,on='Measure_Name').merge(monotonic_pred_df,on='Measure_Name')
     mod_df=mod_df.drop_duplicates()
-    mod_df.to_csv("mod_df.csv",index=False)
+    #mod_df.to_csv("mod_df.csv",index=False)
     return mod_df
 
     
@@ -44,19 +44,39 @@ def trend_calc(performance_data_df,comparison_values):
     latest_measure_df =  performance_data_df[performance_data_df.index.isin(l)]
     latest_measure_df['performance_data'] = latest_measure_df['Passed_Count'] / latest_measure_df['Denominator']
     latest_measure_df['performance_data']=latest_measure_df['performance_data'].fillna(0)
+    
     lenb= len( comparison_values[['Measure_Name']])
+    # print(lenb)
     out = latest_measure_df.groupby('Measure_Name').apply(theil_reg, xcol='Month', ycol='performance_data')
+    
     df_1=out[0]
     df_1 = df_1.reset_index()
     df_1 = df_1.rename({0:"performance_trend_slope"}, axis=1)
+    #print(df_1)
+    latest_measure_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data']] = latest_measure_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data']].astype(str)
+    df_1[[ 'Measure_Name','performance_trend_slope']]= df_1[[ 'Measure_Name','performance_trend_slope']].astype(str)
+    #print(df_1)
+    comparison_values[['Measure_Name','comparison_type','comparison_value']] = comparison_values[['Measure_Name','comparison_type','comparison_value']].astype(str)
+    # comparison_values=comparison_values.Measure_Name.str.encode('utf-8')                               
+    # latest_measure_df=latest_measure_df.Measure_Name.str.encode('utf-8')
+    # df_1=df_1.Measure_Name.str.encode('utf-8')
+    # print(latest_measure_df)
     slope_df = pd.merge( latest_measure_df,df_1 , on='Measure_Name', how='outer')
+
+    slope_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data','performance_trend_slope']]=slope_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data','performance_trend_slope']].astype(str)
+    slope_df.Measure_Name=slope_df.Measure_Name.str.encode('utf-8')
+    comparison_values.Measure_Name=comparison_values.Measure_Name.str.encode('utf-8')
+    # slope_df.to_csv('slope22.csv')
     slope_df=slope_df.drop_duplicates(subset=['Measure_Name'])
     slope_final_df =pd.merge( comparison_values,slope_df , on='Measure_Name', how='outer')
+    # slope_final_df.to_csv('slope12.csv')
     slope_final_df = slope_final_df[:(lenb-1)]
     slope_final_df=slope_final_df.drop_duplicates(subset=['Measure_Name'])
+    slope_final_df.performance_trend_slope=slope_final_df.performance_trend_slope.astype(float)
     slope_final_df['performance_trend_slope'] = slope_final_df['performance_trend_slope'].abs()
+    
     slope_final_df=slope_final_df[["Measure_Name","performance_trend_slope"]]
-    #slope_final_df.to_csv('slope.csv')
+    # slope_final_df.to_csv('slope.csv')
     return slope_final_df
 
 def theil_reg(df, xcol, ycol):
@@ -68,7 +88,7 @@ def calc_goal_comparator_gap(comparison_values_df, performance_data):
     performance_data['Month'] = pd.to_datetime(performance_data['Month'])
     idx= performance_data.groupby(['Measure_Name'])['Month'].transform(max) == performance_data['Month']
     latest_measure_df = performance_data[idx]
-    latest_measure_df = latest_measure_df.reset_index()
+    
     performance_data =[]
     for rowIndex, row in latest_measure_df.iterrows():
         if (row['Passed_Count']==0 and row['Denominator']==0):
@@ -76,13 +96,40 @@ def calc_goal_comparator_gap(comparison_values_df, performance_data):
         else:
             performance_data.append(row['Passed_Count']/row['Denominator'])
     latest_measure_df['performance_data']=performance_data
-    final_df=pd.merge(comparison_values_df, latest_measure_df, on='Measure_Name', how='outer')
+    latest_measure_df= latest_measure_df.reset_index(drop=True)
+    comparison_values_df= comparison_values_df.reset_index(drop=True)
+    # print(latest_measure_df.dtypes)
+    # print(comparison_values_df.dtypes)
+    latest_measure_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data']] = latest_measure_df[['Staff_Number','Measure_Name','Month','Passed_Count','Flagged_Count','Denominator','performance_data']].astype(str)
+    comparison_values_df[['Measure_Name','comparison_type','comparison_value']] = comparison_values_df[['Measure_Name','comparison_type','comparison_value']].astype(str)
+    latest_measure_df.Measure_Name = latest_measure_df.Measure_Name.str.encode('utf-8')
+    comparison_values_df.Measure_Name = comparison_values_df.Measure_Name.str.encode('utf-8')
+
+    # print(latest_measure_df)
+    # print(comparison_values_df)
+    # print(latest_measure_df.info())
+    # print(comparison_values_df.info())
+    # comparison_values_df = comparison_values_df.astype({'Measure_Name':'string'})
+    # latest_measure_df = latest_measure_df.astype({'Measure_Name':'string'})
+    
+    # comparison_values_df=comparison_values_df.set_index(['Measure_Name'])
+    # latest_measure_df=latest_measure_df.set_index(['Measure_Name'])
+    # comparison_values_df.to_csv('comparison.csv',index='False')
+    # latest_measure_df.to_csv('latestmeasure.csv',index='False')
+    final_df=latest_measure_df.merge(comparison_values_df, how='outer', on=['Measure_Name'])
+    #final_df=pd.concat([comparison_values_df,latest_measure_df],axis=1,join='outer')
+    #final_df=pd.merge(comparison_values_df,latest_measure_df,left_on='Measure_Name', right_on='Measure_Name',how='outer')
+    #final_df=comparison_values_df.join(latest_measure_df,how='outer')
+    
     final_df['comparison_value'] = final_df['comparison_value'].astype('double') 
+    final_df=final_df.reset_index(drop=True)
+    # final_df.to_csv("finaldf.csv")
     #final_df=final_df.drop_duplicates(subset=['comparison_id'])
+    final_df['performance_data']=final_df['performance_data'].astype('double') 
     final_df['gap_size'] = final_df['comparison_value']- final_df['performance_data']
     final_df['gap_size'] = final_df['gap_size'].abs()
     
-    final_df.to_csv('final_df.csv')
+    # final_df.to_csv('final_df.csv')
     return final_df
 
 def monotonic_pred(performance_data_df,comparison_values_df):
@@ -118,11 +165,14 @@ def monotonic_pred(performance_data_df,comparison_values_df):
     trend_df['performance_data_month2']  = performance_data_month2
     trend_df['performance_data_month3']  = performance_data_month3
     trend_df = trend_df[['Measure_Name','performance_data_month1','performance_data_month2','performance_data_month3']]
+    
     # comparison_values_df["slowmo:acceptable_by{URIRef}[0]"].fillna(130, inplace = True)
     # comparison_values_df = comparison_values_df[comparison_values_df['slowmo:acceptable_by{URIRef}[0]']!= 130]
     # comparison_values_df=comparison_values_df.reset_index()
     # comparison_values_df.drop(columns=comparison_values_df.columns[0], axis=1, inplace=True)
     comparison_values_df= comparison_values_df.drop_duplicates()
+    #comparison_values_df.Measure_Name = comparison_values_df.Measure_Name.str.encode('utf-8')
+    trend_df.Measure_Name = trend_df.Measure_Name.str.encode('utf-8')
     trend_df =pd.merge( comparison_values_df,trend_df , on='Measure_Name', how='inner')
     for rowIndex, row in trend_df.iterrows():
         m1= row['performance_data_month2']-row['performance_data_month1']
