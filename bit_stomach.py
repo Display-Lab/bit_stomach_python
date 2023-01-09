@@ -56,7 +56,7 @@ for s,p,o in a.triples((s, p, None)):
                 social_dicts[s1]=o2
                 s5=s3
                 f.write(str(s5))
-                a.add((s5,p5,o5))
+                # a.add((s5,p5,o5))
                 for s7,p7,o7 in a.triples((s3,p6,None)):
                     social_comparison_dicts[s1]=o7
             if str(o4)=="goal":
@@ -70,18 +70,18 @@ B=a.serialize(format='json-ld', indent=4)
 performance_data_df = pd.read_csv(sys.argv[2])
 
 goaldf=pd.DataFrame(goal_comparison_dicts.items())
-socialdf=pd.DataFrame(social_comparison_dicts.items())
+#socialdf=pd.DataFrame(social_comparison_dicts.items())
 
 goaldf.columns =['Measure_Name', 'comparison_value']
-socialdf.columns=['Measure_Name', 'comparison_value']
+#socialdf.columns=['Measure_Name', 'comparison_value']
 goaldf.insert(1, 'comparison_type', 'goal')
-socialdf.insert(1, 'comparison_type', 'peers')
+#socialdf.insert(1, 'comparison_type', 'peers')
 
 # goaldf.to_csv("goal.csv")
 # socialdf.to_csv("social.csv")
-frames = [goaldf, socialdf]
-result = pd.concat(frames)
-result1=result.reset_index(drop=True)
+# frames = [goaldf, socialdf]
+# result = pd.concat(frames)
+# result1=result.reset_index(drop=True)
 #performance_data_df.to_csv("comparison.csv")
 mod_df=mod_collector(performance_data_df, goaldf)
 # mod_df.to_csv("mod_df.csv")
