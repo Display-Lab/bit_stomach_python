@@ -22,7 +22,9 @@ def mod_collector(performance_data,comparison_values):
     mod= calc_acheivement(performance_data,comparison_values)
     mod_df=gap_size.merge(trend_slope,on='Measure_Name').merge(monotonic_pred_df,on='Measure_Name').merge(mod,on='Measure_Name')
     mod_df=mod_df.drop_duplicates()
+
     #mod_df= cal_acheivment_loss(mod_df,comparison_values)
+    mod_df["Measure_Name"]=mod_df["Measure_Name"].str.decode(encoding="UTF-8")
     mod_df.to_csv("mod_df.csv",index=False)
     return mod_df
 
