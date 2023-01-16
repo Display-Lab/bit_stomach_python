@@ -18,7 +18,9 @@ from SPARQLWrapper import XML, SPARQLWrapper
 #from insert_annotate import insert_annotate
 from gap_annotate import goal_gap_annotate,peer_gap_annotate
 from acheivement_loss_annotate import goal_acheivementloss_annotate,peer_acheivementloss_annotate
+from consecutive_gap_annotate import goal_consecutive_annotate,peer_consecutive_annotate
 from trend_annotate import trend_annotate
+from monotinicity_annotate import monotonic_annotate
 warnings.filterwarnings("ignore")
 
 class Prepare_data_annotate:
@@ -118,7 +120,31 @@ class Prepare_data_annotate:
         measure_data1,measure_data2,comparator_bnode=self.prepare_data_measure_name(measure_name,**goal_dicts)
         self.a,self.s13=self.insert_annotate(self.input_graph)
         a = peer_acheivementloss_annotate(self.a,self.s13,measure_data2,comparator_bnode)
-        return a    
+        return a  
+
+    def goalconsecutive_annotate(self,measure_name:str,**goal_dicts):
+        measure_data1,measure_data2,comparator_bnode=self.prepare_data_measure_name(measure_name,**goal_dicts)
+        self.a,self.s13=self.insert_annotate(self.input_graph)
+        a = goal_consecutive_annotate(self.a,self.s13,measure_data2,comparator_bnode)
+        return a   
+
+    def peerconsecutive_annotate(self,measure_name:str,**goal_dicts):
+        measure_data1,measure_data2,comparator_bnode=self.prepare_data_measure_name(measure_name,**goal_dicts)
+        self.a,self.s13=self.insert_annotate(self.input_graph)
+        a = peer_consecutive_annotate(self.a,self.s13,measure_data2,comparator_bnode)
+        return a 
+
+    def goal_monotonicity_annotate(self,measure_name:str,**goal_dicts):
+        measure_data1,measure_data2,comparator_bnode=self.prepare_data_measure_name(measure_name,**goal_dicts)
+        self.a,self.s13=self.insert_annotate(self.input_graph)
+        a = monotonic_annotate(self.a,self.s13,measure_data2,comparator_bnode)
+        return a  
+    def peer_monotonicity_annotate(self,measure_name:str,**goal_dicts):
+        measure_data1,measure_data2,comparator_bnode=self.prepare_data_measure_name(measure_name,**goal_dicts)
+        self.a,self.s13=self.insert_annotate(self.input_graph)
+        a = monotonic_annotate(self.a,self.s13,measure_data2,comparator_bnode)
+        return a
+
 
 
 

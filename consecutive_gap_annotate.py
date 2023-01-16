@@ -1,4 +1,5 @@
 import sys
+import sys
 import warnings
 import time
 import logging
@@ -6,7 +7,8 @@ import json
 import re
 import numpy as np 
 import matplotlib.pyplot as plt 
-
+import scipy
+from scipy import stats
 import pandas as pd
 from rdflib import Graph, Literal, Namespace, URIRef,BNode
 from rdflib.collection import Collection
@@ -18,8 +20,7 @@ from SPARQLWrapper import XML, SPARQLWrapper
 
 s=URIRef("http://example.com/app#display-lab")
 p=URIRef('http://example.com/slowmo#IsAboutMeasure')
-
-def goal_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
+def goal_consecutive_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
     s14=s13
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
     latest_measure_df=latest_measure_df.reset_index(drop=True)
@@ -27,63 +28,34 @@ def goal_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_b
     goal_gap_size=latest_measure_df['goal_comparison_value']-latest_measure_df['Performance_Rate']
     latest_measure_df["goal_gap_size"]=goal_gap_size
     back_up_df=latest_measure_df
-    idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(2) .reset_index()
+    idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(3) .reset_index()
     l=idx['level_1'].tolist()
     latest_measure_df =  latest_measure_df[latest_measure_df.index.isin(l)]
     latest_measure_df = latest_measure_df.reset_index(drop=True)
  
-    if((latest_measure_df["goal_gap_size"][1]<0 and latest_measure_df["goal_gap_size"][0]>=0)==True):
+    if((latest_measure_df["goal_gap_size"][2]>0 and latest_measure_df["goal_gap_size"][1]>0 and latest_measure_df["goal_gap_size"][0]>=0)==True):
         ac=BNode(latest_measure_df["Measure_Name"][0])
         av=comparator_bnode
         o14=BNode() 
-        event="loss"
+        event="positive"
         number=find_number(back_up_df,event)
         input_graph.add((s14,p14,o14))
-        input_graph=annotate_loss(input_graph,o14,ac,av,number)
-    if((latest_measure_df["goal_gap_size"][1]>=0 and latest_measure_df["goal_gap_size"][0]<0)==True):
+        input_graph=annotate_consecutive_positive_gap(input_graph,o14,ac,av,number)
+    if((latest_measure_df["goal_gap_size"][2]<0 and latest_measure_df["goal_gap_size"][1]<0 and latest_measure_df["goal_gap_size"][0]<0)==True):
         ac=BNode(latest_measure_df["Measure_Name"][0])
         av=comparator_bnode
-        o14=BNode() 
-        event="acheivement"
+        event="negative"
         number=find_number(back_up_df,event)
+        o14=BNode() 
         input_graph.add((s14,p14,o14))
-        input_graph=annotate_acheivement(input_graph,o14,ac,av,number)
+        input_graph=annotate_consecutive_negative_gap(input_graph,o14,ac,av,number)
 
 
 
     #print(latest_measure_df)
     return input_graph
 
-def annotate_loss(a,s16,measure_Name,o16,number):
-    p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000113')
-    a.add((s16,p15,o15))
-    p16=URIRef('http://example.com/slowmo#RegardingComparator')
-    a.add((s16,p16,o16))
-    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
-    o17=measure_Name
-    a.add((s16,p17,o17))
-    p18=URIRef('http://example.com/slowmo#TimeSinceLastAcheivement')
-    o18=Literal(number)
-    a.add((s16,p18,o18))
-    return a
-
-def annotate_acheivement(a,s16,measure_Name,o16,number):
-    p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000112')
-    a.add((s16,p15,o15))
-    p16=URIRef('http://example.com/slowmo#RegardingComparator')
-    a.add((s16,p16,o16))
-    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
-    o17=measure_Name
-    a.add((s16,p17,o17))
-    p18=URIRef('http://example.com/slowmo#TimeSinceLastLoss')
-    o18=Literal(number)
-    a.add((s16,p18,o18))
-    return a
-
-def peer_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
-    
+def peer_consecutive_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
     s14=s13
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
     latest_measure_df=latest_measure_df.reset_index(drop=True)
@@ -91,41 +63,69 @@ def peer_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_b
     goal_gap_size=latest_measure_df['Peer_Average']-latest_measure_df['Performance_Rate']
     latest_measure_df["goal_gap_size"]=goal_gap_size
     back_up_df=latest_measure_df
-    idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(2) .reset_index()
+    idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(3) .reset_index()
     l=idx['level_1'].tolist()
     latest_measure_df =  latest_measure_df[latest_measure_df.index.isin(l)]
     latest_measure_df = latest_measure_df.reset_index(drop=True)
-    
-    
-    if((latest_measure_df["goal_gap_size"][1]<0 and latest_measure_df["goal_gap_size"][0]>=0)==True):
+ 
+    if((latest_measure_df["goal_gap_size"][2]>0 and latest_measure_df["goal_gap_size"][1]>0 and latest_measure_df["goal_gap_size"][0]>=0)==True):
         ac=BNode(latest_measure_df["Measure_Name"][0])
         av=comparator_bnode
         o14=BNode() 
-        event="loss"
+        event="positive"
         number=find_number(back_up_df,event)
         input_graph.add((s14,p14,o14))
-        input_graph=annotate_loss(input_graph,o14,ac,av,number)
-    if((latest_measure_df["goal_gap_size"][1]>=0 and latest_measure_df["goal_gap_size"][0]<0)==True):
+        input_graph=annotate_consecutive_positive_gap(input_graph,o14,ac,av,number)
+    if((latest_measure_df["goal_gap_size"][2]<0 and latest_measure_df["goal_gap_size"][1]<0 and latest_measure_df["goal_gap_size"][0]<0)==True):
         ac=BNode(latest_measure_df["Measure_Name"][0])
-        
         av=comparator_bnode
-        o14=BNode() 
-        event="acheivement"
+        event="negative"
         number=find_number(back_up_df,event)
+        o14=BNode() 
         input_graph.add((s14,p14,o14))
-        input_graph=annotate_acheivement(input_graph,o14,ac,av,number)
+        input_graph=annotate_consecutive_negative_gap(input_graph,o14,ac,av,number)
 
 
 
     #print(latest_measure_df)
     return input_graph
 
+    
+
+def annotate_consecutive_positive_gap(a,s16,measure_Name,o16,number):
+    p15=RDF.type
+    o15=URIRef('http://example.com/slowmo#ConsecutivePositiveGap')
+    a.add((s16,p15,o15))
+    p16=URIRef('http://example.com/slowmo#RegardingComparator')
+    a.add((s16,p16,o16))
+    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
+    o17=measure_Name
+    a.add((s16,p17,o17))
+    p18=URIRef('http://example.com/slowmo#Numberofmonths')
+    o18=Literal(number)
+    a.add((s16,p18,o18))
+    return a
+
+def annotate_consecutive_negative_gap(a,s16,measure_Name,o16,number):
+    p15=RDF.type
+    o15=URIRef('http://example.com/slowmo#ConsecutiveNegativeGap')
+    a.add((s16,p15,o15))
+    p16=URIRef('http://example.com/slowmo#RegardingComparator')
+    a.add((s16,p16,o16))
+    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
+    o17=measure_Name
+    a.add((s16,p17,o17))
+    p18=URIRef('http://example.com/slowmo#Numberofmonths')
+    o18=Literal(number)
+    a.add((s16,p18,o18))
+    return a
+
 def find_number(backup_df,trend_sign1):
-    if(trend_sign1=="loss"):
+    if(trend_sign1=="negative"):
         
         lista=[]
         lista=backup_df["goal_gap_size"].tolist()
-        count=1
+        count=0
         y=-1
         
         for x in range(len(lista)):
@@ -136,11 +136,11 @@ def find_number(backup_df,trend_sign1):
                 y=y-1
                 
         return count
-    if(trend_sign1=="acheivement"):
+    if(trend_sign1=="positive"):
         
         lista=[]
         lista=backup_df["goal_gap_size"].tolist()
-        count=1
+        count=0
         y=-1
         
         for x in range(len(lista)):

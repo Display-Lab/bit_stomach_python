@@ -49,6 +49,10 @@ p3=URIRef('http://schema.org/name')
 o5=URIRef("http://purl.obolibrary.org/obo/psdo_0000095")
 p5=RDF.type
 p6=URIRef("http://example.com/slowmo#ComparisonValue")
+p21=URIRef("http://purl.org/dc/terms/title")
+p22=URIRef("http://schema.org/name")
+o21=Literal("PEERS")
+o22=Literal("peers")
 #o11=BNode()
 
 #insert blank nodes for social comparators for each measure
@@ -58,6 +62,9 @@ for s,p,o in a.triples((s, p, None)):
     a.add((s1,p1,o11))  
     s11=o11
     a.add((s11,p5,o5))
+    a.add((s11,p21,o21))
+    a.add((s11,p22,o22))
+    
 
 #get comparison values for goal from base graph and get Blank nodes for both goal and peer comparators
 for s,p,o in a.triples((s, p, None)):
@@ -102,9 +109,13 @@ for index, element in enumerate(measure_list):
     a=pr.gaol_gap_annotate(measure_name,**goal_dicts)
     a=pr.goal_trend_annotate(measure_name,**goal_dicts)
     a=pr.goal_acheivement_loss_annotate(measure_name, **goal_dicts)
+    a=pr.goalconsecutive_annotate(measure_name,**goal_dicts)
+    a=pr.goal_monotonicity_annotate(measure_name,**goal_dicts) 
     a=pr.peer_gap_annotate(measure_name,**measure_dicts)
     a=pr.peer_trend_annotate(measure_name,**measure_dicts)
-    a=pr.peer_acheivement_loss_annotate(measure_name, **measure_dicts)    
+    a=pr.peer_acheivement_loss_annotate(measure_name, **measure_dicts) 
+    a=pr.peerconsecutive_annotate(measure_name,**measure_dicts)
+    a=pr.peer_monotonicity_annotate(measure_name,**measure_dicts)   
 # goaldf.columns=['Measure_Name', 'comparison_value']
 # goaldf.insert(1, 'comparison_type', 'goal')
 #socialdf.insert(1, 'comparison_type', 'peers')
