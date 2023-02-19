@@ -5,7 +5,7 @@ import logging
 import json
 import re
 import numpy as np 
-import matplotlib.pyplot as plt 
+ 
 
 import pandas as pd
 from rdflib import Graph, Literal, Namespace, URIRef,BNode
@@ -13,7 +13,7 @@ from rdflib.collection import Collection
 from rdflib.namespace import FOAF, RDF, RDFS, SKOS, XSD
 from rdflib.serializer import Serializer
 from rdfpandas.graph import to_dataframe
-from SPARQLWrapper import XML, SPARQLWrapper
+
 #from calc_gaps_slopes import gap_calc,trend_calc,monotonic_pred,mod_collector
 
 s=URIRef("http://example.com/app#display-lab")
@@ -24,7 +24,7 @@ def goal_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_b
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
     latest_measure_df=latest_measure_df.reset_index(drop=True)
     goal_gap_size=[]
-    goal_gap_size=latest_measure_df['goal_comparison_value']-latest_measure_df['Performance_Rate']
+    goal_gap_size=latest_measure_df['Performance_Rate']-latest_measure_df['goal_comparison_value']
     latest_measure_df["goal_gap_size"]=goal_gap_size
     back_up_df=latest_measure_df
     idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(2) .reset_index()
@@ -88,7 +88,7 @@ def peer_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_b
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
     latest_measure_df=latest_measure_df.reset_index(drop=True)
     goal_gap_size=[]
-    goal_gap_size=latest_measure_df['Peer_Average']-latest_measure_df['Performance_Rate']
+    goal_gap_size=latest_measure_df['Performance_Rate']-latest_measure_df['Peer_Average']
     latest_measure_df["goal_gap_size"]=goal_gap_size
     back_up_df=latest_measure_df
     idx= latest_measure_df.groupby(['Measure_Name'])['Month'].nlargest(2) .reset_index()
@@ -96,7 +96,7 @@ def peer_acheivementloss_annotate(input_graph,s13,latest_measure_df,comparator_b
     latest_measure_df =  latest_measure_df[latest_measure_df.index.isin(l)]
     latest_measure_df = latest_measure_df.reset_index(drop=True)
     
-    
+    print(latest_measure_df)
     if((latest_measure_df["goal_gap_size"][1]<0 and latest_measure_df["goal_gap_size"][0]>=0)==True):
         ac=BNode(latest_measure_df["Measure_Name"][0])
         av=comparator_bnode

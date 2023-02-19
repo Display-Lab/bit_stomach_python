@@ -5,7 +5,7 @@ import logging
 import json
 import re
 import numpy as np 
-import matplotlib.pyplot as plt 
+ 
 
 import pandas as pd
 from rdflib import Graph, Literal, Namespace, URIRef,BNode
@@ -13,7 +13,7 @@ from rdflib.collection import Collection
 from rdflib.namespace import FOAF, RDF, RDFS, SKOS, XSD
 from rdflib.serializer import Serializer
 from rdfpandas.graph import to_dataframe
-from SPARQLWrapper import XML, SPARQLWrapper
+
 #from calc_gaps_slopes import gap_calc,trend_calc,monotonic_pred,mod_collector
 #from insert_annotate import insert_annotate
 from gap_annotate import goal_gap_annotate,peer_gap_annotate

@@ -5,7 +5,7 @@ import logging
 import json
 import re
 import numpy as np 
-import matplotlib.pyplot as plt 
+
 
 import pandas as pd
 from rdflib import Graph, Literal, Namespace, URIRef,BNode
@@ -13,7 +13,7 @@ from rdflib.collection import Collection
 from rdflib.namespace import FOAF, RDF, RDFS, SKOS, XSD
 from rdflib.serializer import Serializer
 from rdfpandas.graph import to_dataframe
-from SPARQLWrapper import XML, SPARQLWrapper
+
 #from calc_gaps_slopes import gap_calc,trend_calc,monotonic_pred,mod_collector
 
 s=URIRef("http://example.com/app#display-lab")
@@ -41,12 +41,12 @@ def goal_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
         o14=BNode() 
         input_graph.add((s14,p14,o14))
         input_graph=annotate_performance_goal_gap(input_graph,o14,ac,av)
-        if(gap_size[0]>0):
+        if(latest_measure_df['goal_comparison_value'][0]<=latest_measure_df['Performance_Rate'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
             input_graph=annotate_positive_goal_gap(input_graph,o14,ac,av,goal_gap_size)
 
-        if(gap_size[0]<0):
+        if(latest_measure_df['goal_comparison_value'][0]>latest_measure_df['Performance_Rate'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
             input_graph=annotate_negative_goal_gap(input_graph,o14,ac,av,goal_gap_size)
@@ -127,11 +127,11 @@ def peer_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
         o14=BNode() 
         input_graph.add((s14,p14,o14))
         input_graph=annotate_performance_peer_gap(input_graph,o14,ac,av)
-        if(gap_size[0]>0):
+        if(latest_measure_df['Peer_Average'][0]<=latest_measure_df['Performance_Rate'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
             input_graph=annotate_positive_peer_gap(input_graph,o14,ac,av,goal_gap_size)
-        if(gap_size[0]<0):
+        if(latest_measure_df['Performance_Rate'][0]<latest_measure_df['Peer_Average'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
             input_graph=annotate_negative_peer_gap(input_graph,o14,ac,av,goal_gap_size)
