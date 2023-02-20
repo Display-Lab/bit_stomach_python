@@ -1,0 +1,4878 @@
+[
+    {
+        "@id": "http://example.com/app#display-lab",
+        "@type": [
+            "http://example.com/slowmo#spek"
+        ],
+        "http://example.com/slowmo#IsAboutMeasure": [
+            {
+                "@id": "_:NMB01"
+            },
+            {
+                "@id": "_:NMB02"
+            },
+            {
+                "@id": "_:PUL01"
+            },
+            {
+                "@id": "_:GLU01"
+            },
+            {
+                "@id": "_:GLU02"
+            },
+            {
+                "@id": "_:TRAN01"
+            },
+            {
+                "@id": "_:TRAN02"
+            },
+            {
+                "@id": "_:BP01"
+            },
+            {
+                "@id": "_:BP02"
+            },
+            {
+                "@id": "_:MED01"
+            },
+            {
+                "@id": "_:FLUID01NC"
+            },
+            {
+                "@id": "_:FLUID01C"
+            },
+            {
+                "@id": "_:AKI01"
+            },
+            {
+                "@id": "_:TEMP01"
+            },
+            {
+                "@id": "_:TEMP02"
+            },
+            {
+                "@id": "_:TEMP03"
+            },
+            {
+                "@id": "_:TOC02"
+            },
+            {
+                "@id": "_:PONV01"
+            },
+            {
+                "@id": "_:PUL02"
+            },
+            {
+                "@id": "_:TOC03"
+            },
+            {
+                "@id": "_:CARD02"
+            },
+            {
+                "@id": "_:PONV02"
+            },
+            {
+                "@id": "_:TOC01"
+            },
+            {
+                "@id": "_:PUL03"
+            },
+            {
+                "@id": "_:CARD03"
+            },
+            {
+                "@id": "_:SUS01"
+            },
+            {
+                "@id": "_:PONV03"
+            },
+            {
+                "@id": "_:BP03"
+            },
+            {
+                "@id": "_:PONV03b"
+            },
+            {
+                "@id": "_:GLU03"
+            },
+            {
+                "@id": "_:GLU04"
+            },
+            {
+                "@id": "_:TEMP04"
+            },
+            {
+                "@id": "_:ABX01"
+            },
+            {
+                "@id": "_:MORT01"
+            },
+            {
+                "@id": "_:GLU05"
+            },
+            {
+                "@id": "_:PAIN01"
+            },
+            {
+                "@id": "_:BP04"
+            },
+            {
+                "@id": "_:GA01"
+            },
+            {
+                "@id": "_:PAIN02"
+            },
+            {
+                "@id": "_:PONV04"
+            },
+            {
+                "@id": "_:TEMP05"
+            },
+            {
+                "@id": "_:GA02"
+            },
+            {
+                "@id": "_:TEMP06"
+            },
+            {
+                "@id": "_:PONV05"
+            }
+        ],
+        "http://example.com/slowmo#IsAboutOrganization": [
+            {
+                "@id": "_:Nba0d03004c524c45870ccd7375448d01"
+            }
+        ],
+        "http://example.com/slowmo#IsAboutPerformer": [
+            {
+                "@id": "_:p1"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nba0d03004c524c45870ccd7375448d01",
+        "@type": [
+            "http://schema.org/Organization"
+        ],
+        "http://schema.org/address": [
+            {
+                "@id": "_:Nff76dd5f14c14261b0fd18ea561c22f0"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nff76dd5f14c14261b0fd18ea561c22f0",
+        "@type": [
+            "http://schema.org/PostalAddress"
+        ],
+        "http://schema.org/addressCountry": [
+            {
+                "@value": "USA"
+            }
+        ],
+        "http://schema.org/addressRegion": [
+            {
+                "@value": "MI"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "DisplayLab"
+            }
+        ],
+        "http://schema.org/postalCode": [
+            {
+                "@value": "48109"
+            }
+        ],
+        "http://schema.org/streetAddress": [
+            {
+                "@value": "DLHS, 1161 NIB, 300 N Ingalls St."
+            }
+        ]
+    },
+    {
+        "@id": "_:NMB01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nbe77483924e041619e4abf9fec7c07fd"
+            },
+            {
+                "@id": "_:Nf663eaac4d584d37b952375d4288a195"
+            },
+            {
+                "@id": "_:N95f31c6ba7f04ac08bc0971c72500675"
+            },
+            {
+                "@id": "_:Nb94eb06a2bb54546b1b8d4254f160869"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Train of Four Taken"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "NMB01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nbe77483924e041619e4abf9fec7c07fd",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf663eaac4d584d37b952375d4288a195",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N95f31c6ba7f04ac08bc0971c72500675",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb94eb06a2bb54546b1b8d4254f160869",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:NMB02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N9e4442df5b344bbfb2284b12ac2ac4a2"
+            },
+            {
+                "@id": "_:Nafebae5441e544119a3893e6c25e8280"
+            },
+            {
+                "@id": "_:Nd300d23aa2484d0796f517ffb66fea72"
+            },
+            {
+                "@id": "_:N48a56619849e450da0257604c6edcea8"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Reversal Administered"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "NMB02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9e4442df5b344bbfb2284b12ac2ac4a2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nafebae5441e544119a3893e6c25e8280",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd300d23aa2484d0796f517ffb66fea72",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N48a56619849e450da0257604c6edcea8",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PUL01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N3c2fc78291cc471c9920b531e31b1888"
+            },
+            {
+                "@id": "_:Ncccdb841afab4f989f43114c4b8027bc"
+            },
+            {
+                "@id": "_:N1129bef002554d48b52f5a6fbe42f7db"
+            },
+            {
+                "@id": "_:Need329a5ccf84d819fc0499c05158f7f"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Protective Tidal Volume, 10 mL/kg PBW"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PUL01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3c2fc78291cc471c9920b531e31b1888",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ncccdb841afab4f989f43114c4b8027bc",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1129bef002554d48b52f5a6fbe42f7db",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Need329a5ccf84d819fc0499c05158f7f",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GLU01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N24d7d4706b3a4d748e04cd14f34d6929"
+            },
+            {
+                "@id": "_:N11f4a0fe32b7411cb65147627cd518b0"
+            },
+            {
+                "@id": "_:N9115f10cefba4f07820221587c8e859a"
+            },
+            {
+                "@id": "_:N8b419d78be654c1cb50c3fd3afd9c1a1"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "High Glucose Treated, Intraop"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GLU01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N24d7d4706b3a4d748e04cd14f34d6929",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N11f4a0fe32b7411cb65147627cd518b0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9115f10cefba4f07820221587c8e859a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N8b419d78be654c1cb50c3fd3afd9c1a1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GLU02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N84f353f6360a46f997cd19188ab84c4a"
+            },
+            {
+                "@id": "_:N8894682f04a7464c97418944a42d0e13"
+            },
+            {
+                "@id": "_:N0267b5dffb2244d7887472e3664b3d59"
+            },
+            {
+                "@id": "_:Na98b339f49524e18a62032ff2d0e3bf2"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Low Glucose Treated, Intraop"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GLU02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N84f353f6360a46f997cd19188ab84c4a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N8894682f04a7464c97418944a42d0e13",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N0267b5dffb2244d7887472e3664b3d59",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na98b339f49524e18a62032ff2d0e3bf2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TRAN01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N1fb5932e9776484a9a52403e6ac1f5c9"
+            },
+            {
+                "@id": "_:N4921f51aed0043e891a72f6b77221ad0"
+            },
+            {
+                "@id": "_:N66fceff6678e4170bd895dfc8121b145"
+            },
+            {
+                "@id": "_:N95252224e3eb4776b8538d5cd5562fcc"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Transfusion Management Vigilance"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TRAN01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1fb5932e9776484a9a52403e6ac1f5c9",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N4921f51aed0043e891a72f6b77221ad0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N66fceff6678e4170bd895dfc8121b145",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N95252224e3eb4776b8538d5cd5562fcc",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TRAN02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N68ab0070ee994d31b9e509921fbd8ccc"
+            },
+            {
+                "@id": "_:N1beb83ad38d24f8ea1bc191db01c76d4"
+            },
+            {
+                "@id": "_:N795f618168094805a5af566b8caae6ba"
+            },
+            {
+                "@id": "_:N55f1fe81c0c141ed9f749fae5384807a"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Overtransfusion"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TRAN02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N68ab0070ee994d31b9e509921fbd8ccc",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1beb83ad38d24f8ea1bc191db01c76d4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N795f618168094805a5af566b8caae6ba",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N55f1fe81c0c141ed9f749fae5384807a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:BP01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N2e41557b7d524341bf2b44022b32cbe7"
+            },
+            {
+                "@id": "_:N489dfc403b0d4c2888c69cf6f52d92c1"
+            },
+            {
+                "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a"
+            },
+            {
+                "@id": "_:N0beec332e7d844208cd117fdcd150c6a"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Low MAP Prevention < 55"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2e41557b7d524341bf2b44022b32cbe7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N489dfc403b0d4c2888c69cf6f52d92c1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N0beec332e7d844208cd117fdcd150c6a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:BP02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N4284062dd077439fbf9c909a94a48f8f"
+            },
+            {
+                "@id": "_:N406d202418b64088a8aa97a2b04ae50c"
+            },
+            {
+                "@id": "_:N9986a065180f4d88b534e95634c72809"
+            },
+            {
+                "@id": "_:Nc39539dfd8a04b209e61c032f566d88b"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Avoiding Monitoring Gaps"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "BP02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N4284062dd077439fbf9c909a94a48f8f",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N406d202418b64088a8aa97a2b04ae50c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9986a065180f4d88b534e95634c72809",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc39539dfd8a04b209e61c032f566d88b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:MED01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N56ee993066ad4bad9d2b85912c29d1cd"
+            },
+            {
+                "@id": "_:Nc0986aa07a9d4ea088bda885029edb79"
+            },
+            {
+                "@id": "_:Ne8f057e0aca244c4b15ab1ff54f7e741"
+            },
+            {
+                "@id": "_:N78e0e17b79524a359885e7e0c83c5a9c"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Avoiding Medication Overdose"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "MED01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N56ee993066ad4bad9d2b85912c29d1cd",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.05
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc0986aa07a9d4ea088bda885029edb79",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne8f057e0aca244c4b15ab1ff54f7e741",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N78e0e17b79524a359885e7e0c83c5a9c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:FLUID01NC",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nb607d6c68d5b488a89ed5a854c78c0f7"
+            },
+            {
+                "@id": "_:N2386dce8503e490893c8b207089e479c"
+            },
+            {
+                "@id": "_:Nb25bf59e8e514b829b93ddc4a4461fc3"
+            },
+            {
+                "@id": "_:N76b1c0c768414251a449257e4180635a"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Minimizing Colloid Use (Non-Cardiac)"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "FLUID01NC"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb607d6c68d5b488a89ed5a854c78c0f7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2386dce8503e490893c8b207089e479c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb25bf59e8e514b829b93ddc4a4461fc3",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N76b1c0c768414251a449257e4180635a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:FLUID01C",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nff0d52f2a18340e5bceb9ce8db412fda"
+            },
+            {
+                "@id": "_:N3b44f47db1554ddcade2f2ebcaa7f4ba"
+            },
+            {
+                "@id": "_:Nf4313b5b911d4170a488e12c15a1765b"
+            },
+            {
+                "@id": "_:Ncd88a17433914da6bd748996a5c99392"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Minimizing Colloid Use (Cardiac)"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "FLUID01C"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nff0d52f2a18340e5bceb9ce8db412fda",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3b44f47db1554ddcade2f2ebcaa7f4ba",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf4313b5b911d4170a488e12c15a1765b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ncd88a17433914da6bd748996a5c99392",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:AKI01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Ncac8b65cb648426da99e673b18cee599"
+            },
+            {
+                "@id": "_:N3b0b317f7ae746d88d736158e74888af"
+            },
+            {
+                "@id": "_:N7ccf5067d93644618cbf950cdb536ecd"
+            },
+            {
+                "@id": "_:Ned2771a00d65461bb3de1dc8c1a34e58"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Acute Kidney Injury"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "AKI01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ncac8b65cb648426da99e673b18cee599",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3b0b317f7ae746d88d736158e74888af",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7ccf5067d93644618cbf950cdb536ecd",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ned2771a00d65461bb3de1dc8c1a34e58",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N1ccda3ae19b74f7e9f67d2aebc412527"
+            },
+            {
+                "@id": "_:Nbd9425ecfbc745218572c215fd31d970"
+            },
+            {
+                "@id": "_:Nef5b8a1419454c5296f30f7378c870a3"
+            },
+            {
+                "@id": "_:N92af1dbf225f498ba0d671a8300ec681"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Thermoregulation Vigilance - Active Warming"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1ccda3ae19b74f7e9f67d2aebc412527",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nbd9425ecfbc745218572c215fd31d970",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nef5b8a1419454c5296f30f7378c870a3",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N92af1dbf225f498ba0d671a8300ec681",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N2ff879760b0445e2ac1309b4804cf7a6"
+            },
+            {
+                "@id": "_:N54462214881d42b79c31ce8988835fd3"
+            },
+            {
+                "@id": "_:Ne2af91fd8a01427d82486a4253077459"
+            },
+            {
+                "@id": "_:Nefacdefdbfd84974949621c8883c301b"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Thermoregulation Monitoring - Core Temperature"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2ff879760b0445e2ac1309b4804cf7a6",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N54462214881d42b79c31ce8988835fd3",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne2af91fd8a01427d82486a4253077459",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nefacdefdbfd84974949621c8883c301b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N4cb97e378a1d4dbbb2a3f1e1ee1963d2"
+            },
+            {
+                "@id": "_:Nfdd557f48959425997df0d258aac5aa8"
+            },
+            {
+                "@id": "_:Nd824ae81c05543e9b7a62a3ddf6b2d3d"
+            },
+            {
+                "@id": "_:N64a3bb971964445c9a2f1957fcb221ca"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Perioperative Hypothermia"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP03"
+            }
+        ]
+    },
+    {
+        "@id": "_:N4cb97e378a1d4dbbb2a3f1e1ee1963d2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nfdd557f48959425997df0d258aac5aa8",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd824ae81c05543e9b7a62a3ddf6b2d3d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N64a3bb971964445c9a2f1957fcb221ca",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TOC02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Ndc75d556d35e48f9934e086670c2adff"
+            },
+            {
+                "@id": "_:Nfea04424701346f6959f57a401f13c00"
+            },
+            {
+                "@id": "_:Nee9a0dd5f5ad4c34b5cb4a8cee332980"
+            },
+            {
+                "@id": "_:N07e0b8c0f38142f88abd2a6d14f246e1"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Postoperative Transfer of Care to PACU"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TOC02"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndc75d556d35e48f9934e086670c2adff",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nfea04424701346f6959f57a401f13c00",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nee9a0dd5f5ad4c34b5cb4a8cee332980",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N07e0b8c0f38142f88abd2a6d14f246e1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nc36f8120587f44749d46199edc2b3f9f"
+            },
+            {
+                "@id": "_:N6a23e69bd99d46ffb85929395b73546d"
+            },
+            {
+                "@id": "_:N3fe1dd805e194d7f894f83f407cf5171"
+            },
+            {
+                "@id": "_:Nf5ea7822a14e4a11a11e6da1cd44ddc2"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PONV Prophylaxis: Adults (Old)"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc36f8120587f44749d46199edc2b3f9f",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N6a23e69bd99d46ffb85929395b73546d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3fe1dd805e194d7f894f83f407cf5171",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf5ea7822a14e4a11a11e6da1cd44ddc2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PUL02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N6c58a98fc493471fa07ecd935bb29b98"
+            },
+            {
+                "@id": "_:N655c9441c40a4a34ad58f260bc645c0c"
+            },
+            {
+                "@id": "_:N7731a68f60074972b65f4bdd91ee1f38"
+            },
+            {
+                "@id": "_:N5eee5782894a42eab6d0ed6d1b231c2f"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Protective Tidal Volume, 8 mL/kg PBW"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PUL02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N6c58a98fc493471fa07ecd935bb29b98",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N655c9441c40a4a34ad58f260bc645c0c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7731a68f60074972b65f4bdd91ee1f38",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N5eee5782894a42eab6d0ed6d1b231c2f",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TOC03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N88687ee1b82a4975a7c1b2eb49b9cab4"
+            },
+            {
+                "@id": "_:N83f3d2607dc04c97bdcf4e129ad57872"
+            },
+            {
+                "@id": "_:Ne1717b349089499d843fedbb0d6ae989"
+            },
+            {
+                "@id": "_:Nda34bf2af8a74859b6048e8079aee4f8"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Postoperative Transfer of Care to ICU"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TOC03"
+            }
+        ]
+    },
+    {
+        "@id": "_:N88687ee1b82a4975a7c1b2eb49b9cab4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N83f3d2607dc04c97bdcf4e129ad57872",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne1717b349089499d843fedbb0d6ae989",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nda34bf2af8a74859b6048e8079aee4f8",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:CARD02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N04e7c24423094c309f35fe23401b6bb4"
+            },
+            {
+                "@id": "_:Neb2d74ea3e334ce4bee28fdd0b4478f9"
+            },
+            {
+                "@id": "_:N874a717f88244e54bb57ee7021d709b7"
+            },
+            {
+                "@id": "_:Ne87b095e0c4941bbaa265a64ab8121ff"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Myocardial Infarction"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "CARD02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N04e7c24423094c309f35fe23401b6bb4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.05
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Neb2d74ea3e334ce4bee28fdd0b4478f9",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N874a717f88244e54bb57ee7021d709b7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne87b095e0c4941bbaa265a64ab8121ff",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N9f4945acc2454695a8543e8723c81cb4"
+            },
+            {
+                "@id": "_:N6ceba44809fa4f5e90ecdf55388122f7"
+            },
+            {
+                "@id": "_:Nafc7448603f14db4b3df17e08e9b186d"
+            },
+            {
+                "@id": "_:Na790be703f884a2f8188755b2a37ba41"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PONV Prophylaxis (Old): Pediatrics"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9f4945acc2454695a8543e8723c81cb4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N6ceba44809fa4f5e90ecdf55388122f7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nafc7448603f14db4b3df17e08e9b186d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na790be703f884a2f8188755b2a37ba41",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TOC01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N544694e2142645919f67ba77336310d3"
+            },
+            {
+                "@id": "_:Nd736564e8d7c491ba37c3293ce72e254"
+            },
+            {
+                "@id": "_:Na90e200b4426418f877618d1abba5b55"
+            },
+            {
+                "@id": "_:N236fc540fad24669b50b3787c8572ef0"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Intraoperative Transfer of Care"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TOC01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N544694e2142645919f67ba77336310d3",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd736564e8d7c491ba37c3293ce72e254",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na90e200b4426418f877618d1abba5b55",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N236fc540fad24669b50b3787c8572ef0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PUL03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N30ee6288b75c41dd9e674872fa348704"
+            },
+            {
+                "@id": "_:Nd2960d4acca54ae4a1d8bc10fadcf48d"
+            },
+            {
+                "@id": "_:N1c43fa72285b42fcaa21a09d49aa0781"
+            },
+            {
+                "@id": "_:N7ee738fd24594d7582ff4bba703d5319"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Administration of PEEP"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PUL03"
+            }
+        ]
+    },
+    {
+        "@id": "_:N30ee6288b75c41dd9e674872fa348704",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd2960d4acca54ae4a1d8bc10fadcf48d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1c43fa72285b42fcaa21a09d49aa0781",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7ee738fd24594d7582ff4bba703d5319",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:CARD03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N078b7de12f444a2e9dbac39e9d54b93f"
+            },
+            {
+                "@id": "_:N45fb05c1c8b046a491c4cce624ca27f5"
+            },
+            {
+                "@id": "_:Na1b55592ea394dbfaf377ad8ef11dc66"
+            },
+            {
+                "@id": "_:N5d10afcfd4854e4db5e05eb0b9111ccc"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Myocardial Infarction, High Risk Patients"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "CARD03"
+            }
+        ]
+    },
+    {
+        "@id": "_:N078b7de12f444a2e9dbac39e9d54b93f",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.05
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N45fb05c1c8b046a491c4cce624ca27f5",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na1b55592ea394dbfaf377ad8ef11dc66",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N5d10afcfd4854e4db5e05eb0b9111ccc",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:SUS01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nb6ece9f556ad4505b0615d7b45b129c5"
+            },
+            {
+                "@id": "_:N7899f333a7884a0d825838c6c8b8d393"
+            },
+            {
+                "@id": "_:N24da5fbd54cc441e91328d440df626be"
+            },
+            {
+                "@id": "_:N011e423470384299a2d2a8c4d33cac5d"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Low Fresh Gas Flow"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "SUS01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb6ece9f556ad4505b0615d7b45b129c5",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7899f333a7884a0d825838c6c8b8d393",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N24da5fbd54cc441e91328d440df626be",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N011e423470384299a2d2a8c4d33cac5d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N475a9b9e04b94c1991e229ee4e9c1510"
+            },
+            {
+                "@id": "_:Nc11fab70e6104b6cb92461e06a0fe7eb"
+            },
+            {
+                "@id": "_:N8fe125efe7f64c36b859ad21387a1c10"
+            },
+            {
+                "@id": "_:Ndb5c6e5c43274669b34a1346db27dde5"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Postoperative Nausea or Vomiting Outcome"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV03"
+            }
+        ]
+    },
+    {
+        "@id": "_:N475a9b9e04b94c1991e229ee4e9c1510",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc11fab70e6104b6cb92461e06a0fe7eb",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N8fe125efe7f64c36b859ad21387a1c10",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndb5c6e5c43274669b34a1346db27dde5",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:BP03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nbbb026df744b40469b01a65807c90bf4"
+            },
+            {
+                "@id": "_:Nc6aab0463113449fa9f3efe5c2226052"
+            },
+            {
+                "@id": "_:Na6c87f4c547243e298750ff22f02f742"
+            },
+            {
+                "@id": "_:Ne60dbdc302b64f0782d38542a7c191cf"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Low Map Prevention < 65"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "BP03"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nbbb026df744b40469b01a65807c90bf4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc6aab0463113449fa9f3efe5c2226052",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na6c87f4c547243e298750ff22f02f742",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne60dbdc302b64f0782d38542a7c191cf",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV03b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Na56d7bb2ecae4f6bb3656eb8d58f2225"
+            },
+            {
+                "@id": "_:N8ea34167d36b46508e8238350e788703"
+            },
+            {
+                "@id": "_:N91ea748562be411d900b1c204fa24927"
+            },
+            {
+                "@id": "_:Nfd9dd45b167b4c8aad02f717677ddecd"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Postoperative Nausea or Vomiting Outcome"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV03b"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na56d7bb2ecae4f6bb3656eb8d58f2225",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N8ea34167d36b46508e8238350e788703",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N91ea748562be411d900b1c204fa24927",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nfd9dd45b167b4c8aad02f717677ddecd",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GLU03",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nf77c6f04e97b490d9b452796f4bc35c1"
+            },
+            {
+                "@id": "_:N136491a19fd74961bfc4ef1a78fc6d51"
+            },
+            {
+                "@id": "_:N087f5186f5a04c43a70032314908be18"
+            },
+            {
+                "@id": "_:Nb8aacb5f6b4142b6ad9c17c893d40e52"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "High Glucose Treated, Periop"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GLU03"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf77c6f04e97b490d9b452796f4bc35c1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N136491a19fd74961bfc4ef1a78fc6d51",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N087f5186f5a04c43a70032314908be18",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb8aacb5f6b4142b6ad9c17c893d40e52",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GLU04",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N3cfa0f2727274a16a4d44807ab41c135"
+            },
+            {
+                "@id": "_:N2354a3a64e3d4f4a8023adef18f7c35e"
+            },
+            {
+                "@id": "_:Ne600f8bdd1c7474c815b20dbf584f39e"
+            },
+            {
+                "@id": "_:Ne0badf694c4b4ce28814486a6ef9d19c"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Low Glucose Treated, Periop"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GLU04"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3cfa0f2727274a16a4d44807ab41c135",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2354a3a64e3d4f4a8023adef18f7c35e",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne600f8bdd1c7474c815b20dbf584f39e",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne0badf694c4b4ce28814486a6ef9d19c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP04",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Ndf3320f85a8545fd800746bc4fb67805"
+            },
+            {
+                "@id": "_:Nb9486d616983469c901e56d5c83a6b83"
+            },
+            {
+                "@id": "_:Nb6ea233ef53b4c168c1b08f6aa132140"
+            },
+            {
+                "@id": "_:Nd9a03c78a2314632a1c0f1a55ad4d0e1"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Pediatric Temperature Management"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP04"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndf3320f85a8545fd800746bc4fb67805",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb9486d616983469c901e56d5c83a6b83",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb6ea233ef53b4c168c1b08f6aa132140",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd9a03c78a2314632a1c0f1a55ad4d0e1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:ABX01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nad45923d6c0a4c5ca9cec29fff387ad4"
+            },
+            {
+                "@id": "_:N167dd20380234e9f94fc0aef92723f32"
+            },
+            {
+                "@id": "_:Nde6084db358d4a08a02975fc42719d2a"
+            },
+            {
+                "@id": "_:N585f776932774d8bb9021b44aff59892"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Antibiotic Timing for Cesarean Delivery"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "ABX01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nad45923d6c0a4c5ca9cec29fff387ad4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N167dd20380234e9f94fc0aef92723f32",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nde6084db358d4a08a02975fc42719d2a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N585f776932774d8bb9021b44aff59892",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:MORT01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Na5e1aafa84f84015b0e2aab7d7305082"
+            },
+            {
+                "@id": "_:Nacda997a46a1493e83deb9d4a0c91822"
+            },
+            {
+                "@id": "_:Nff85bae7a45949be9410a0385932569c"
+            },
+            {
+                "@id": "_:N2b6a31c1c9a243beb9dfa7c9c0af9032"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "30 Day Post-Op In-Hospital Mortality Rate"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "MORT01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na5e1aafa84f84015b0e2aab7d7305082",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nacda997a46a1493e83deb9d4a0c91822",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nff85bae7a45949be9410a0385932569c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2b6a31c1c9a243beb9dfa7c9c0af9032",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GLU05",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N3cc58771a0a248e6a954bdbe37e18d36"
+            },
+            {
+                "@id": "_:N357bedc9be9e4ffca96c209419c18df0"
+            },
+            {
+                "@id": "_:N9efa62c97a9445b1a1b84c6d5ee95753"
+            },
+            {
+                "@id": "_:N365cd157c2294b6b81ecfc7f009173d5"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Escalated High Glucose Treated"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GLU05"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3cc58771a0a248e6a954bdbe37e18d36",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N357bedc9be9e4ffca96c209419c18df0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9efa62c97a9445b1a1b84c6d5ee95753",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N365cd157c2294b6b81ecfc7f009173d5",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PAIN01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nd9b25411f47d47e89a3962249edfdda6"
+            },
+            {
+                "@id": "_:N560f8d82e9f54dd196524ed31a824f62"
+            },
+            {
+                "@id": "_:N018735e8f91349718643c2631ff506bf"
+            },
+            {
+                "@id": "_:N9b6717a5381d4b8bb5b882762d494266"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Multimodal Analgesia, Pediatrics"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PAIN01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd9b25411f47d47e89a3962249edfdda6",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N560f8d82e9f54dd196524ed31a824f62",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N018735e8f91349718643c2631ff506bf",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9b6717a5381d4b8bb5b882762d494266",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:BP04",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nf2639eb4d0e84c9bb4d2e60a753b91e0"
+            },
+            {
+                "@id": "_:N6615a100619e49cc84fcc41b3dd3075b"
+            },
+            {
+                "@id": "_:Nfe255f85dbbc46fd9bc2f402b3522c7d"
+            },
+            {
+                "@id": "_:N1a5dbc63cef043d6a0300d36c4117aa8"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "SBP < 90 in Cesarean Deliveries"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "BP04"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf2639eb4d0e84c9bb4d2e60a753b91e0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N6615a100619e49cc84fcc41b3dd3075b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nfe255f85dbbc46fd9bc2f402b3522c7d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1a5dbc63cef043d6a0300d36c4117aa8",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GA01",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nefefa71831dd4f379bc7dd1f4f6f711b"
+            },
+            {
+                "@id": "_:N726b95dbaf9f447789a9d5cc09722364"
+            },
+            {
+                "@id": "_:Ndf7b1b47b33b4bd2b705dbba94d38bf5"
+            },
+            {
+                "@id": "_:Ndd090e64de6449849607df53125e1c32"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "General Anesthesia During Cesarean Deliveries"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GA01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nefefa71831dd4f379bc7dd1f4f6f711b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N726b95dbaf9f447789a9d5cc09722364",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndf7b1b47b33b4bd2b705dbba94d38bf5",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndd090e64de6449849607df53125e1c32",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PAIN02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Ne6bcabaf37d74158963d8f06ebb002d4"
+            },
+            {
+                "@id": "_:Ndf4f04690bf345949b1c8f0a599ecd42"
+            },
+            {
+                "@id": "_:Ned5b5e66b0304ffcb2a93bfd6181e85c"
+            },
+            {
+                "@id": "_:Nedb7913658234f32b1aaf548fb32e0b6"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Multimodal Analgesia"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PAIN02"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne6bcabaf37d74158963d8f06ebb002d4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.93
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndf4f04690bf345949b1c8f0a599ecd42",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ned5b5e66b0304ffcb2a93bfd6181e85c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nedb7913658234f32b1aaf548fb32e0b6",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV04",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nee719b35a07b403f96c548954c617ad2"
+            },
+            {
+                "@id": "_:N31a667000f204ed8b24d604f7d5646cf"
+            },
+            {
+                "@id": "_:N73dfbc4c4b68471a8303700a3ca6b459"
+            },
+            {
+                "@id": "_:Nc6cfdc600cea4c8e8f412ad662d93ec7"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PONV Prophylaxis: Pediatrics"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV04"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nee719b35a07b403f96c548954c617ad2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N31a667000f204ed8b24d604f7d5646cf",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N73dfbc4c4b68471a8303700a3ca6b459",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc6cfdc600cea4c8e8f412ad662d93ec7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP05",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Nb4d32c3de1d742998abcec88f81e1479"
+            },
+            {
+                "@id": "_:N7b74ce4660ee4942a06a855b4eff28b4"
+            },
+            {
+                "@id": "_:N01cef8ae86de42fbaa5d1fc5ba7888c1"
+            },
+            {
+                "@id": "_:Nd05f527d41904d57ab269a241a07c900"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Hypothermia in Cesarean Deliveries"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP05"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nb4d32c3de1d742998abcec88f81e1479",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N7b74ce4660ee4942a06a855b4eff28b4",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N01cef8ae86de42fbaa5d1fc5ba7888c1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd05f527d41904d57ab269a241a07c900",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:GA02",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N50ce97c4656a470e84bdf713f2348946"
+            },
+            {
+                "@id": "_:Ned552d9721164ec097031608b8ea5021"
+            },
+            {
+                "@id": "_:Nff687dd008624082a80ba90b290bf426"
+            },
+            {
+                "@id": "_:N2c118f75e59441288509684188508a2e"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "General anesthesia after neuraxial in Cesarean Deliveries"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "GA02"
+            }
+        ]
+    },
+    {
+        "@id": "_:N50ce97c4656a470e84bdf713f2348946",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ned552d9721164ec097031608b8ea5021",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nff687dd008624082a80ba90b290bf426",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2c118f75e59441288509684188508a2e",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:TEMP06",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:Ne2c73110e5884b2fa0b2c5bdd35c6e73"
+            },
+            {
+                "@id": "_:Nf151ed1d47c740a18bbaebb6ea1e48f7"
+            },
+            {
+                "@id": "_:Ndb6e5c7b39e34e1b9e0f0565ef170c4a"
+            },
+            {
+                "@id": "_:Ncb9b649307a94debbb0a0d539cd29827"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "Hypothermia Avoidance in Cardiac Surgery"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "TEMP06"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne2c73110e5884b2fa0b2c5bdd35c6e73",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.1
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nf151ed1d47c740a18bbaebb6ea1e48f7",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndb6e5c7b39e34e1b9e0f0565ef170c4a",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ncb9b649307a94debbb0a0d539cd29827",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:PONV05",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000102"
+        ],
+        "http://example.com/slowmo#WithComparator": [
+            {
+                "@id": "_:N1cba9729bb6b4ea182caf4f0b090c605"
+            },
+            {
+                "@id": "_:N3558a0788bbe43b3b6d2fd558666cdcc"
+            },
+            {
+                "@id": "_:N8743c38abc5641d499ae5e73201792ec"
+            },
+            {
+                "@id": "_:N990092f5cc6e42c4945ed2be8ead8b9b"
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PONV Prophylaxis: Adults"
+            }
+        ],
+        "http://schema.org/identifier": [
+            {
+                "@value": "PONV05"
+            }
+        ]
+    },
+    {
+        "@id": "_:N1cba9729bb6b4ea182caf4f0b090c605",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#ComparisonValue": [
+            {
+                "@value": 0.9
+            }
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "GOAL"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "goal"
+            }
+        ]
+    },
+    {
+        "@id": "_:N3558a0788bbe43b3b6d2fd558666cdcc",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_10"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_10"
+            }
+        ]
+    },
+    {
+        "@id": "_:N8743c38abc5641d499ae5e73201792ec",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "TOP_25"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "top_25"
+            }
+        ]
+    },
+    {
+        "@id": "_:N990092f5cc6e42c4945ed2be8ead8b9b",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://purl.org/dc/terms/title": [
+            {
+                "@value": "PEERS"
+            }
+        ],
+        "http://schema.org/name": [
+            {
+                "@value": "peers"
+            }
+        ]
+    },
+    {
+        "@id": "_:p1",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000085"
+        ],
+        "http://purl.obolibrary.org/obo/RO_0000091": [
+            {
+                "@id": "_:Ndc0fba3bafdc4c5e89babe182893398d"
+            },
+            {
+                "@id": "_:Ne55604c0b67f45b6a4a974adac87ba31"
+            },
+            {
+                "@id": "_:N0355d2f06d104f7e933775ad9a9cad82"
+            },
+            {
+                "@id": "_:N52cb7adb20314b76be84ecd4f76f7274"
+            },
+            {
+                "@id": "_:N67effc9d05b3478bbc7a1e114c1bb82c"
+            },
+            {
+                "@id": "_:N2f60d7a3eca44b3da37e39b17d92e6e6"
+            },
+            {
+                "@id": "_:N0d618f0d04e84e2dad396a7d88ebb528"
+            },
+            {
+                "@id": "_:N17c502c5e6634eac8ab6bfe5e9a8a2fa"
+            },
+            {
+                "@id": "_:Nc45af900936945578b549605c5133850"
+            },
+            {
+                "@id": "_:N9b75e90d1e2044e6a81f0edec51ac193"
+            },
+            {
+                "@id": "_:Nd9ca761c9da24dffb179fd04912201d0"
+            },
+            {
+                "@id": "_:N883140fa89cf49dabec6a25f2aee4a83"
+            },
+            {
+                "@id": "_:N79fa9071620e4bc69595f6058c29e052"
+            },
+            {
+                "@id": "_:Na8f768a051a249c093073513741f80f2"
+            },
+            {
+                "@id": "_:N9b242f89333249468742d10d587b071b"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ndc0fba3bafdc4c5e89babe182893398d",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000094"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N2e41557b7d524341bf2b44022b32cbe7"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Ne55604c0b67f45b6a4a974adac87ba31",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000106"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N2e41557b7d524341bf2b44022b32cbe7"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N0355d2f06d104f7e933775ad9a9cad82",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000104"
+        ],
+        "http://example.com/slowmo#PerformanceGapSize": [
+            {
+                "@value": 0.09999999999999998
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N2e41557b7d524341bf2b44022b32cbe7"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N52cb7adb20314b76be84ecd4f76f7274",
+        "@type": [
+            "http://example.com/slowmo#ConsecutiveGoalNegativeGap"
+        ],
+        "http://example.com/slowmo#Numberofmonths": [
+            {
+                "@value": 12
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N2e41557b7d524341bf2b44022b32cbe7"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N67effc9d05b3478bbc7a1e114c1bb82c",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N0beec332e7d844208cd117fdcd150c6a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N2f60d7a3eca44b3da37e39b17d92e6e6",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000106"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N0beec332e7d844208cd117fdcd150c6a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N0d618f0d04e84e2dad396a7d88ebb528",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000104"
+        ],
+        "http://example.com/slowmo#PerformanceGapSize": [
+            {
+                "@value": 0.010000000000000009
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N0beec332e7d844208cd117fdcd150c6a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N17c502c5e6634eac8ab6bfe5e9a8a2fa",
+        "@type": [
+            "http://example.com/slowmo#ConsecutivePeerNegativeGap"
+        ],
+        "http://example.com/slowmo#Numberofmonths": [
+            {
+                "@value": 5
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N0beec332e7d844208cd117fdcd150c6a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nc45af900936945578b549605c5133850",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N489dfc403b0d4c2888c69cf6f52d92c1"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9b75e90d1e2044e6a81f0edec51ac193",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000106"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N489dfc403b0d4c2888c69cf6f52d92c1"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Nd9ca761c9da24dffb179fd04912201d0",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000104"
+        ],
+        "http://example.com/slowmo#PerformanceGapSize": [
+            {
+                "@value": 0.010000000000000009
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N489dfc403b0d4c2888c69cf6f52d92c1"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N883140fa89cf49dabec6a25f2aee4a83",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000095"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N79fa9071620e4bc69595f6058c29e052",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000106"
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:Na8f768a051a249c093073513741f80f2",
+        "@type": [
+            "http://purl.obolibrary.org/obo/psdo_0000104"
+        ],
+        "http://example.com/slowmo#PerformanceGapSize": [
+            {
+                "@value": 0.010000000000000009
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    },
+    {
+        "@id": "_:N9b242f89333249468742d10d587b071b",
+        "@type": [
+            "http://example.com/slowmo#ConsecutivePeerNegativeGap"
+        ],
+        "http://example.com/slowmo#Numberofmonths": [
+            {
+                "@value": 6
+            }
+        ],
+        "http://example.com/slowmo#RegardingComparator": [
+            {
+                "@id": "_:N7b2dc8d595af47dc9c9b7ce32879e30a"
+            }
+        ],
+        "http://example.com/slowmo#RegardingMeasure": [
+            {
+                "@id": "_:BP01"
+            }
+        ]
+    }
+]
