@@ -112,7 +112,7 @@ def peer_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
     latest_measure_df=latest_measure_df.reset_index(drop=True)
     #a=insert_annotate(input_graph)
-    
+   
     gap_size=latest_measure_df['Performance_Rate']-latest_measure_df['Peer_Average']
     
     if (gap_size[0]!= 0):
@@ -141,9 +141,22 @@ def peer_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
 
     return input_graph
 
+def annotate_top_10_percentile(a,s16,measure_Name,o16):
+    p15=RDF.type
+    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000129')
+    a.add((s16,p15,o15))
+    p16=URIRef('http://example.com/slowmo#RegardingComparator')
+    a.add((s16,p16,o16))
+    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
+    o17=measure_Name
+    a.add((s16,p17,o17))
+    return a
+
+
 def top_10_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
     s14=s13
     p14=URIRef('http://purl.obolibrary.org/obo/RO_0000091')
+    
     latest_measure_df=latest_measure_df.reset_index(drop=True)
     #a=insert_annotate(input_graph)
     
@@ -161,6 +174,9 @@ def top_10_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
         o14=BNode() 
         input_graph.add((s14,p14,o14))
         input_graph=annotate_performance_peer_gap(input_graph,o14,ac,av)
+        o14=BNode()
+        input_graph.add((s14,p14,o14))
+        input_graph=annotate_top_10_percentile(input_graph,o14,ac,av)
         if(latest_measure_df['Top_10_Average'][0]<=latest_measure_df['Performance_Rate'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
@@ -169,11 +185,18 @@ def top_10_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
             input_graph=annotate_negative_peer_gap(input_graph,o14,ac,av,goal_gap_size)
-        
-
-    
-
     return input_graph
+
+def annotate_top_25_percentile(a,s16,measure_Name,o16):
+    p15=RDF.type
+    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000128')
+    a.add((s16,p15,o15))
+    p16=URIRef('http://example.com/slowmo#RegardingComparator')
+    a.add((s16,p16,o16))
+    p17=URIRef('http://example.com/slowmo#RegardingMeasure')
+    o17=measure_Name
+    a.add((s16,p17,o17))
+    return a
 
 def top_25_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
     s14=s13
@@ -195,6 +218,9 @@ def top_25_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
         o14=BNode() 
         input_graph.add((s14,p14,o14))
         input_graph=annotate_performance_peer_gap(input_graph,o14,ac,av)
+        o14=BNode()
+        input_graph.add((s14,p14,o14))
+        input_graph=annotate_top_25_percentile(input_graph,o14,ac,av)
         if(latest_measure_df['Top_25_Average'][0]<=latest_measure_df['Performance_Rate'][0]):
             o14=BNode() 
             input_graph.add((s14,p14,o14))
