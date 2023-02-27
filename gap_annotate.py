@@ -58,7 +58,7 @@ def goal_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
 
 def annotate_goal_comparator(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000094')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000094')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -69,7 +69,7 @@ def annotate_goal_comparator(a,s16,measure_Name,o16):
 
 def annotate_performance_goal_gap(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000106')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000106')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -80,7 +80,7 @@ def annotate_performance_goal_gap(a,s16,measure_Name,o16):
 
 def annotate_positive_goal_gap(a,s16,measure_Name,o16,goal_gap_size):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000104')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000104')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -95,7 +95,7 @@ def annotate_positive_goal_gap(a,s16,measure_Name,o16,goal_gap_size):
 def annotate_negative_goal_gap(a,s16,measure_Name,o16,goal_gap_size):
 
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000105')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000105')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -143,7 +143,7 @@ def peer_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
 
 def annotate_top_10_percentile(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000129')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000129')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -189,7 +189,7 @@ def top_10_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
 
 def annotate_top_25_percentile(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000128')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000128')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -237,7 +237,7 @@ def top_25_gap_annotate(input_graph,s13,latest_measure_df,comparator_bnode):
 
 def annotate_peer_comparator(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000095')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000095')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -248,7 +248,7 @@ def annotate_peer_comparator(a,s16,measure_Name,o16):
 
 def annotate_performance_peer_gap(a,s16,measure_Name,o16):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000106')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000106')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -259,7 +259,7 @@ def annotate_performance_peer_gap(a,s16,measure_Name,o16):
 
 def annotate_positive_peer_gap(a,s16,measure_Name,o16,goal_gap_size):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000104')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000104')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
@@ -273,7 +273,7 @@ def annotate_positive_peer_gap(a,s16,measure_Name,o16,goal_gap_size):
 
 def annotate_negative_peer_gap(a,s16,measure_Name,o16,goal_gap_size):
     p15=RDF.type
-    o15=URIRef('http://purl.obolibrary.org/obo/psdo_0000105')
+    o15=URIRef('http://purl.obolibrary.org/obo/PSDO_0000105')
     a.add((s16,p15,o15))
     p16=URIRef('http://example.com/slowmo#RegardingComparator')
     a.add((s16,p16,o16))
