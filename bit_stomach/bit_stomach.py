@@ -9,7 +9,7 @@ from rdflib.namespace import RDF
 #from calc_gaps_slopes import gap_calc,trend_calc,monotonic_pred,mod_collector
 #from insert_annotate import insert_annotate
 
-from prepare_data_annotate import Prepare_data_annotate
+from bit_stomach.prepare_data_annotate import Prepare_data_annotate
 
 class Bit_stomach:
     def __init__(self,input_graph:Graph,performance_data:pd.DataFrame):
