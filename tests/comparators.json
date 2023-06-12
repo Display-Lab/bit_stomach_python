@@ -1,0 +1,8 @@
+{
+  "@comparators":{
+    "peer_average_comparator":"http://purl.obolibrary.org/obo/PSDO_0000126",
+    "peer_90th_percentile_benchmark":"http://purl.obolibrary.org/obo/PSDO_0000129",
+    "peer_75th_percentile_benchmark":"http://purl.obolibrary.org/obo/PSDO_0000128",
+    "MPOG_goal":"http://purl.obolibrary.org/obo/PSDO_0000094"
+  }
+}
